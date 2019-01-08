@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ManagerSystemDataBaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Admin">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="a_User" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="a_Pass" Type="nchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="department">
+    <Key>
+      <PropertyRef Name="m_Id" />
+    </Key>
+    <Property Name="m_Id" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="m_name" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="m_production" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="m_access" Type="int" />
+  </EntityType>
+  <EntityType Name="Manager">
+    <Key>
+      <PropertyRef Name="d_id" />
+    </Key>
+    <Property Name="d_id" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="d_username" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="d_password" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="d_gendar" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="d_department" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="d_email" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="d_phone" Type="nchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="staff">
+    <Key>
+      <PropertyRef Name="s_Id" />
+    </Key>
+    <Property Name="s_Id" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="s_name" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="s_gender" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="s_birthday" Type="date" Nullable="false" />
+    <Property Name="s_phone" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="s_email" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="s_post" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="s_salary" Type="int" Nullable="false" />
+    <Property Name="s_major" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="s_department" Type="nchar" MaxLength="10" />
+    <Property Name="s_username" Type="nchar" MaxLength="10" />
+    <Property Name="s_password" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityContainer Name="ManagerSystemDataBaseModelStoreContainer">
+    <EntitySet Name="Admin" EntityType="Self.Admin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="department" EntityType="Self.department" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Manager" EntityType="Self.Manager" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="staff" EntityType="Self.staff" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

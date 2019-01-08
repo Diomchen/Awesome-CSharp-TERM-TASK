@@ -1,0 +1,136 @@
+﻿<Window x:Class="高级人事管理系统.部门模块.部门选择模块.其他部门.otherDepartment"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:高级人事管理系统.部门模块.部门选择模块.其他部门"
+        mc:Ignorable="d"
+        Title="otherDepartment" Height="450" Width="800" WindowStyle="None" Opacity="0.9"  AllowsTransparency="True" MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    <Grid Background="#3D3B3B">
+        <Label  Name="Title"  FontSize="36" VerticalAlignment="Center" Background="#3D3B3B"  Foreground="#FFB36A6A" Height="74"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Right" Width="375" Margin="0,-2,415,377.6" FontWeight="Bold" />
+        <Button x:Name="BtnClose"  HorizontalAlignment="Left" Margin="776,10,0,0" VerticalAlignment="Top" Width="14" Height="15" BorderThickness="0" Click="BtnClose_Click" Opacity="0.5" MouseEnter="BtnClose_MouseEnter" MouseLeave="BtnClose_MouseLeave" RenderTransformOrigin ="0.5,0.5 ">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderThickness="0" >
+                        <Border.Background>
+                            <ImageBrush ImageSource="/图片/关闭.png"></ImageBrush>
+                        </Border.Background>
+                    </Border>
+
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Cursor"  Value="Hand"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <Button  HorizontalAlignment="Left" Margin="748,10,0,0" VerticalAlignment="Top" Width="23" Height="15" BorderThickness="0" Click="Button_Click_1"  Opacity="0.5" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderThickness="0" >
+                        <Border.Background>
+                            <ImageBrush ImageSource="/图片/减.png"></ImageBrush>
+                        </Border.Background>
+                    </Border>
+
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Cursor"  Value="Hand"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Frame  NavigationUIVisibility="Hidden" Name="frame" HorizontalAlignment="Left" Height="378" Margin="151,72,0,0" VerticalAlignment="Top" Width="639" Background="#FF9F9C9C"/>
+
+        <StackPanel Width="140" Height="457" VerticalAlignment="Bottom" Margin="0,0,660,-79.4" Background="#FF9F9C9C">
+           
+            <Button DataContext="StaffWatch" Content="职员一览" Height="55" FontSize="18" Foreground="#FFFFFCFC" Margin="0 15 0 0" MouseEnter="BtnSelect_MouseEnter" MouseLeave="BtnSelect_MouseLeave" x:Name="BtnSelect" Click="BtnSelect_Click">
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Background" Value="#FF128370"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Background="{TemplateBinding Background}" CornerRadius="4,4,4,4">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Cursor"  Value="Hand"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+            <Button DataContext="TaskListWatch" Content="分配任务清单" Height="55" FontSize="18" Foreground="#FFFFFCFC" Margin="0 3 0 0" MouseEnter="BtnSelect_MouseEnter" MouseLeave="BtnSelect_MouseLeave" x:Name="BtnSelect_1" Click="BtnSelect_Click">
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Background" Value="#FF128370"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Background="{TemplateBinding Background}" CornerRadius="4,4,4,4">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Cursor"  Value="Hand"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+            <Button DataContext="ChangeSalary" Content="调整薪资" Height="55" FontSize="18" Foreground="#FFFFFCFC" Margin="0 3 0 0" MouseEnter="BtnSelect_MouseEnter" MouseLeave="BtnSelect_MouseLeave" x:Name="BtnSelect_2" Click="BtnSelect_Click">
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Background" Value="#FF128370"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Background="{TemplateBinding Background}" CornerRadius="4,4,4,4">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Cursor"  Value="Hand"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+            <Button DataContext="RewAndPubWatch" Content="申请奖惩" Height="55" FontSize="18" Foreground="#FFFFFCFC" Margin="0 3 0 0" MouseEnter="BtnSelect_MouseEnter" MouseLeave="BtnSelect_MouseLeave" x:Name="BtnSelect_3" Click="BtnSelect_Click">
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Background" Value="#FF128370"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Background="{TemplateBinding Background}" CornerRadius="4,4,4,4">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Cursor"  Value="Hand"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

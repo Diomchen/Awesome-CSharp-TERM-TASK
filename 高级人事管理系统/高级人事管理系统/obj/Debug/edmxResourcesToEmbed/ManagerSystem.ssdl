@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MSDSecondModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Admin">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="a_User" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="a_Pass" Type="nchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ApplySalary">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="s_Id" Type="int" Nullable="false" />
+    <Property Name="a_salary" Type="int" Nullable="false" />
+    <Property Name="s_department" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="s_rewAPub" Type="int" />
+  </EntityType>
+  <EntityType Name="CheckStaff">
+    <Key>
+      <PropertyRef Name="c_Id" />
+    </Key>
+    <Property Name="c_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="c_name" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="c_normal" Type="int" />
+    <Property Name="c_late" Type="int" />
+  </EntityType>
+  <EntityType Name="department">
+    <Key>
+      <PropertyRef Name="m_Id" />
+    </Key>
+    <Property Name="m_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="m_name" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="m_production" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="m_access" Type="int" />
+  </EntityType>
+  <EntityType Name="staff">
+    <Key>
+      <PropertyRef Name="s_Id" />
+    </Key>
+    <Property Name="s_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="s_name" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="s_gender" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="s_birthday" Type="date" Nullable="false" />
+    <Property Name="s_phone" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="s_email" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="s_post" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="s_salary" Type="int" Nullable="false" />
+    <Property Name="s_major" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="s_department" Type="nchar" MaxLength="10" />
+    <Property Name="s_username" Type="nchar" MaxLength="10" />
+    <Property Name="s_password" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="TaskStaff">
+    <Key>
+      <PropertyRef Name="t_id" />
+    </Key>
+    <Property Name="t_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="s_id" Type="int" Nullable="false" />
+    <Property Name="s_declar" Type="varchar" MaxLength="50" />
+    <Property Name="s_startTime" Type="date" Nullable="false" />
+    <Property Name="s_endTime" Type="date" Nullable="false" />
+    <Property Name="s_process" Type="int" />
+  </EntityType>
+  <EntityContainer Name="MSDSecondModelStoreContainer">
+    <EntitySet Name="Admin" EntityType="Self.Admin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ApplySalary" EntityType="Self.ApplySalary" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CheckStaff" EntityType="Self.CheckStaff" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="department" EntityType="Self.department" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="staff" EntityType="Self.staff" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TaskStaff" EntityType="Self.TaskStaff" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

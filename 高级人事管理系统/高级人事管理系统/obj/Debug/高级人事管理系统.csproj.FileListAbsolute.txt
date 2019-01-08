@@ -1,0 +1,116 @@
+F:\VsProject\高级人事管理系统\高级人事管理系统\bin\Debug\高级人事管理系统.exe.config
+F:\VsProject\高级人事管理系统\高级人事管理系统\bin\Debug\高级人事管理系统.exe
+F:\VsProject\高级人事管理系统\高级人事管理系统\bin\Debug\高级人事管理系统.pdb
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\MainWindow.g.cs
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\登陆模块\Login.g.cs
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\App.g.cs
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\高级人事管理系统_MarkupCompile.cache
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\高级人事管理系统_MarkupCompile.lref
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\MainWindow.baml
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\登陆模块\Login.baml
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\高级人事管理系统.g.resources
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\高级人事管理系统.Properties.Resources.resources
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\高级人事管理系统.csproj.GenerateResource.cache
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\高级人事管理系统.csproj.CoreCompileInputs.cache
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\高级人事管理系统.exe
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\高级人事管理系统.pdb
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\高级人事管理系统_Content.g.cs
+F:\VsProject\高级人事管理系统\高级人事管理系统\bin\Debug\EntityFramework.dll
+F:\VsProject\高级人事管理系统\高级人事管理系统\bin\Debug\EntityFramework.SqlServer.dll
+F:\VsProject\高级人事管理系统\高级人事管理系统\bin\Debug\EntityFramework.xml
+F:\VsProject\高级人事管理系统\高级人事管理系统\bin\Debug\EntityFramework.SqlServer.xml
+F:\VsProject\高级人事管理系统\高级人事管理系统\bin\Debug\zh-Hans\EntityFramework.resources.dll
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\高级人事管理系统.csproj.CopyComplete
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\考勤模块\Check.g.cs
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\考勤模块\Check.baml
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\部门模块\部门选择模块\人事部门\PersonnelDepartment.g.cs
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\部门模块\部门选择模块\人事部门\PersonnelDepartment.baml
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\管理员界面功能页\StaffList.g.cs
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\管理员界面功能页\StaffList.baml
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\管理员界面功能页\Managerm.g.cs
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\管理员界面功能页\Managerm.baml
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\资源\ResourceDictionary.baml
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\App.baml
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\管理员界面功能页\newStaff.g.cs
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\管理员界面功能页\newStaff.baml
+F:\VsProject\高级人事管理系统\高级人事管理系统\bin\Debug\MSDSecond.mdf
+F:\VsProject\高级人事管理系统\高级人事管理系统\bin\Debug\MSDSecond_log.ldf
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\管理员界面功能页\newAdmin.g.cs
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\管理员界面功能页\newAdmin.baml
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\考勤模块\员工信息自主查看界面\DetailSelf.g.cs
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\考勤模块\员工信息自主查看界面\DetailSelf.baml
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\部门模块\部门选择模块\人事部门\人事部门功能页\AllDepartment.g.cs
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\部门模块\部门选择模块\人事部门\人事部门功能页\AssoDepartmentManager.g.cs
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\部门模块\部门选择模块\人事部门\人事部门功能页\NewDepartment.g.cs
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\部门模块\部门选择模块\人事部门\人事部门功能页\AllDepartment.baml
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\部门模块\部门选择模块\人事部门\人事部门功能页\AssoDepartmentManager.baml
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\部门模块\部门选择模块\人事部门\人事部门功能页\NewDepartment.baml
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\部门模块\部门选择模块\其他部门\otherDepartment.g.cs
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\部门模块\部门选择模块\其他部门\其他部门功能页\ChangeSalary.g.cs
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\部门模块\部门选择模块\其他部门\其他部门功能页\RewAndPubWatch.g.cs
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\部门模块\部门选择模块\其他部门\其他部门功能页\StaffWatch.g.cs
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\部门模块\部门选择模块\其他部门\其他部门功能页\TaskListWatch.g.cs
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\部门模块\部门选择模块\其他部门\otherDepartment.baml
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\部门模块\部门选择模块\其他部门\其他部门功能页\ChangeSalary.baml
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\部门模块\部门选择模块\其他部门\其他部门功能页\RewAndPubWatch.baml
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\部门模块\部门选择模块\其他部门\其他部门功能页\StaffWatch.baml
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\部门模块\部门选择模块\其他部门\其他部门功能页\TaskListWatch.baml
+F:\VsProject\高级人事管理系统\高级人事管理系统\obj\Debug\高级人事管理系统.csprojAssemblyReference.cache
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\bin\Debug\MSDSecond.mdf
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\bin\Debug\MSDSecond_log.ldf
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\bin\Debug\高级人事管理系统.exe.config
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\bin\Debug\高级人事管理系统.exe
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\bin\Debug\高级人事管理系统.pdb
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\bin\Debug\EntityFramework.dll
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\bin\Debug\EntityFramework.xml
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\高级人事管理系统.csprojAssemblyReference.cache
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\MainWindow.g.cs
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\登陆模块\Login.g.cs
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\管理员界面功能页\Managerm.g.cs
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\管理员界面功能页\newAdmin.g.cs
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\管理员界面功能页\newStaff.g.cs
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\管理员界面功能页\StaffList.g.cs
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\考勤模块\Check.g.cs
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\考勤模块\员工信息自主查看界面\DetailSelf.g.cs
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\部门模块\部门选择模块\人事部门\PersonnelDepartment.g.cs
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\部门模块\部门选择模块\人事部门\人事部门功能页\AllDepartment.g.cs
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\部门模块\部门选择模块\人事部门\人事部门功能页\AssoDepartmentManager.g.cs
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\部门模块\部门选择模块\人事部门\人事部门功能页\NewDepartment.g.cs
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\部门模块\部门选择模块\其他部门\otherDepartment.g.cs
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\部门模块\部门选择模块\其他部门\其他部门功能页\ChangeSalary.g.cs
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\部门模块\部门选择模块\其他部门\其他部门功能页\RewAndPubWatch.g.cs
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\部门模块\部门选择模块\其他部门\其他部门功能页\StaffWatch.g.cs
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\部门模块\部门选择模块\其他部门\其他部门功能页\TaskListWatch.g.cs
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\App.g.cs
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\高级人事管理系统_Content.g.cs
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\高级人事管理系统_MarkupCompile.cache
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\高级人事管理系统_MarkupCompile.lref
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\App.baml
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\MainWindow.baml
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\登陆模块\Login.baml
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\管理员界面功能页\Managerm.baml
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\管理员界面功能页\newAdmin.baml
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\管理员界面功能页\newStaff.baml
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\管理员界面功能页\StaffList.baml
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\考勤模块\Check.baml
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\考勤模块\员工信息自主查看界面\DetailSelf.baml
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\资源\ResourceDictionary.baml
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\部门模块\部门选择模块\人事部门\PersonnelDepartment.baml
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\部门模块\部门选择模块\人事部门\人事部门功能页\AllDepartment.baml
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\部门模块\部门选择模块\人事部门\人事部门功能页\AssoDepartmentManager.baml
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\部门模块\部门选择模块\人事部门\人事部门功能页\NewDepartment.baml
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\部门模块\部门选择模块\其他部门\otherDepartment.baml
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\部门模块\部门选择模块\其他部门\其他部门功能页\ChangeSalary.baml
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\部门模块\部门选择模块\其他部门\其他部门功能页\RewAndPubWatch.baml
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\部门模块\部门选择模块\其他部门\其他部门功能页\StaffWatch.baml
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\部门模块\部门选择模块\其他部门\其他部门功能页\TaskListWatch.baml
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\高级人事管理系统.g.resources
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\高级人事管理系统.Properties.Resources.resources
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\高级人事管理系统.csproj.GenerateResource.cache
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\高级人事管理系统.csproj.CoreCompileInputs.cache
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\高级人事管理系统.csproj.CopyComplete
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\高级人事管理系统.exe
+C:\Users\Shuhan Chen\Desktop\新建文件夹 (2)\高级人事管理系统\高级人事管理系统\obj\Debug\高级人事管理系统.pdb

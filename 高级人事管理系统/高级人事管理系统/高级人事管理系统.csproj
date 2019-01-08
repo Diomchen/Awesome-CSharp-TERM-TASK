@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B61CC4E2-20FD-4FAD-8801-148E3BF7F176}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>高级人事管理系统</RootNamespace>
+    <AssemblyName>高级人事管理系统</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon-20181212085705133.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Admin.cs">
+      <DependentUpon>ManagerSystem.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplySalary.cs">
+      <DependentUpon>ManagerSystem.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CheckStaff.cs">
+      <DependentUpon>ManagerSystem.tt</DependentUpon>
+    </Compile>
+    <Compile Include="department.cs">
+      <DependentUpon>ManagerSystem.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerSystem.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ManagerSystem.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerSystem.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ManagerSystem.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerSystem.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ManagerSystem.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="staff.cs">
+      <DependentUpon>ManagerSystem.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TaskStaff.cs">
+      <DependentUpon>ManagerSystem.tt</DependentUpon>
+    </Compile>
+    <Compile Include="登陆模块\Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="管理员界面功能页\Managerm.xaml.cs">
+      <DependentUpon>Managerm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="管理员界面功能页\newAdmin.xaml.cs">
+      <DependentUpon>newAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="管理员界面功能页\newStaff.xaml.cs">
+      <DependentUpon>newStaff.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="管理员界面功能页\StaffList.xaml.cs">
+      <DependentUpon>StaffList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="考勤模块\Check.xaml.cs">
+      <DependentUpon>Check.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="考勤模块\员工信息自主查看界面\DetailSelf.xaml.cs">
+      <DependentUpon>DetailSelf.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="部门模块\部门选择模块\人事部门\PersonnelDepartment.xaml.cs">
+      <DependentUpon>PersonnelDepartment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="部门模块\部门选择模块\人事部门\人事部门功能页\AllDepartment.xaml.cs">
+      <DependentUpon>AllDepartment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="部门模块\部门选择模块\人事部门\人事部门功能页\AssoDepartmentManager.xaml.cs">
+      <DependentUpon>AssoDepartmentManager.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="部门模块\部门选择模块\人事部门\人事部门功能页\NewDepartment.xaml.cs">
+      <DependentUpon>NewDepartment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="部门模块\部门选择模块\人事部门\多表联合查询对象类\StaffARAB.cs" />
+    <Compile Include="部门模块\部门选择模块\其他部门\otherDepartment.xaml.cs">
+      <DependentUpon>otherDepartment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="部门模块\部门选择模块\其他部门\其他部门功能页\ChangeSalary.xaml.cs">
+      <DependentUpon>ChangeSalary.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="部门模块\部门选择模块\其他部门\其他部门功能页\RewAndPubWatch.xaml.cs">
+      <DependentUpon>RewAndPubWatch.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="部门模块\部门选择模块\其他部门\其他部门功能页\StaffWatch.xaml.cs">
+      <DependentUpon>StaffWatch.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="部门模块\部门选择模块\其他部门\其他部门功能页\TaskListWatch.xaml.cs">
+      <DependentUpon>TaskListWatch.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="部门模块\部门选择模块\其他部门\数据绑定类\Shechi.cs" />
+    <Compile Include="部门模块\部门验证类\ManagerChecking.cs" />
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="登陆模块\Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="管理员界面功能页\Managerm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="管理员界面功能页\newAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="管理员界面功能页\newStaff.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="管理员界面功能页\StaffList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="考勤模块\Check.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="考勤模块\员工信息自主查看界面\DetailSelf.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="资源\ResourceDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="部门模块\部门选择模块\人事部门\PersonnelDepartment.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="部门模块\部门选择模块\人事部门\人事部门功能页\AllDepartment.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="部门模块\部门选择模块\人事部门\人事部门功能页\AssoDepartmentManager.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="部门模块\部门选择模块\人事部门\人事部门功能页\NewDepartment.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="部门模块\部门选择模块\其他部门\otherDepartment.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="部门模块\部门选择模块\其他部门\其他部门功能页\ChangeSalary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="部门模块\部门选择模块\其他部门\其他部门功能页\RewAndPubWatch.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="部门模块\部门选择模块\其他部门\其他部门功能页\StaffWatch.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="部门模块\部门选择模块\其他部门\其他部门功能页\TaskListWatch.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EntityDeploy Include="ManagerSystem.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ManagerSystem.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ManagerSystem.edmx.diagram">
+      <DependentUpon>ManagerSystem.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="图片\t2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="图片\t1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="图片\t3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="图片\t4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="图片\t5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="图片\t6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="图片\t7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="图片\t8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="图片\关闭.png" />
+    <Resource Include="图片\箭头 下.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="图片\减.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="favicon-20181212085705133.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ManagerSystem.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ManagerSystem.edmx</DependentUpon>
+      <LastGenOutput>ManagerSystem.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ManagerSystem.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ManagerSystem.edmx</DependentUpon>
+      <LastGenOutput>ManagerSystem.cs</LastGenOutput>
+    </Content>
+    <Content Include="MSDSecond.mdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MSDSecond_log.ldf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>MSDSecond.mdf</DependentUpon>
+    </Content>
+    <Resource Include="图片\t9.jpg" />
+    <Resource Include="图片\t10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

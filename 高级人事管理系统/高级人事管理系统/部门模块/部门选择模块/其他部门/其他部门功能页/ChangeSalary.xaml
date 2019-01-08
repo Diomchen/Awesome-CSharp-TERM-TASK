@@ -1,0 +1,21 @@
+﻿<Page x:Class="高级人事管理系统.部门模块.部门选择模块.其他部门.其他部门功能页.ChangeSalary"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:高级人事管理系统.部门模块.部门选择模块.其他部门.其他部门功能页"
+      mc:Ignorable="d" 
+      d:DesignHeight="378" d:DesignWidth="639"
+      Title="ChangeSalary">
+
+    <Grid Background="#FF9F9C9C" Opacity="0.9">
+        <Label Content="职员ID" HorizontalAlignment="Left" Margin="203,41,0,0" VerticalAlignment="Top" FontSize="19"/>
+        <Label Content="职员姓名" HorizontalAlignment="Left" Margin="185,103,0,0" VerticalAlignment="Top" FontSize="19"/>
+        <Label Content="更改薪水额" HorizontalAlignment="Left" Margin="166,159,0,0" VerticalAlignment="Top" FontSize="19"/>
+        <TextBox Name="staffIDBox" HorizontalAlignment="Left" Height="23" Margin="324,52,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="staffNameBox" HorizontalAlignment="Left" Height="23" Margin="324,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="staffSalaryBox" HorizontalAlignment="Left" Height="23" Margin="324,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="申请更改薪水" HorizontalAlignment="Left" Margin="240,254,0,0" VerticalAlignment="Top" Width="147" Height="50" FontSize="20" Click="Button_Click" />
+
+    </Grid>
+</Page>

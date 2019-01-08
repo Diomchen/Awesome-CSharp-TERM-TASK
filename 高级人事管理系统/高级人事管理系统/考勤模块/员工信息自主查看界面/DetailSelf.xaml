@@ -1,0 +1,57 @@
+﻿<Window x:Class="高级人事管理系统.考勤模块.员工信息自主查看界面.DetailSelf"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:高级人事管理系统.考勤模块.员工信息自主查看界面"
+        mc:Ignorable="d"
+        Title="DetailSelf" Height="450" Width="800" WindowStyle="None" Opacity="0.9"  Background="#3D3B3B" AllowsTransparency="True" MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    <Grid>
+        <Button x:Name="BtnClose"  HorizontalAlignment="Left" Margin="776,10,0,0" VerticalAlignment="Top" Width="14" Height="15" BorderThickness="0" Click="BtnClose_Click" Opacity="0.5" MouseEnter="BtnClose_MouseEnter" MouseLeave="BtnClose_MouseLeave" RenderTransformOrigin ="0.5,0.5 ">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderThickness="0" >
+                        <Border.Background>
+                            <ImageBrush ImageSource="/图片/关闭.png"></ImageBrush>
+                        </Border.Background>
+                    </Border>
+
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Cursor"  Value="Hand"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <Button  HorizontalAlignment="Left" Margin="748,10,0,0" VerticalAlignment="Top" Width="23" Height="15" BorderThickness="0" Click="Button_Click_1"  Opacity="0.5" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderThickness="0" >
+                        <Border.Background>
+                            <ImageBrush ImageSource="/图片/减.png"></ImageBrush>
+                        </Border.Background>
+                    </Border>
+
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Cursor"  Value="Hand"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Label Content="Task List"  FontSize="36" VerticalAlignment="Center" Background="#3D3B3B"  Foreground="#FFB36A6A" Height="74"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Right" Width="375" Margin="0,0,208,375.6" FontWeight="Bold" FontFamily="ROG Fonts"/>
+        <DataGrid Name="dataTaskList" HorizontalAlignment="Left" Height="361" Margin="10,79,0,0" VerticalAlignment="Top" Width="780" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="dtID" Header="任务ID" Binding="{Binding t_id}"/>
+                <DataGridTextColumn x:Name="dtSID" Header="职员ID" Binding="{Binding s_id}"/>
+                <DataGridTextColumn x:Name="dtDec" Header="                                   任务说明" Binding="{Binding s_declar}" Width="300"/>
+                <DataGridTextColumn x:Name="dtStart" Header="任务分配时间" Binding="{Binding s_startTime}"/>
+                <DataGridTextColumn x:Name="dtEnd" Header="任务截止时间" Binding="{Binding s_endTime}"/>
+                <DataGridTextColumn x:Name="dtProcess" Header="任务进度" Binding="{Binding s_process}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

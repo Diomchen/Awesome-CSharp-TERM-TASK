@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="MSDSecondModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Admin">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="a_User" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="a_Pass" Type="nchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ApplySalary">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="s_Id" Type="int" Nullable="false" />
+          <Property Name="a_salary" Type="int" Nullable="false" />
+          <Property Name="s_department" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="s_rewAPub" Type="int" />
+        </EntityType>
+        <EntityType Name="CheckStaff">
+          <Key>
+            <PropertyRef Name="c_Id" />
+          </Key>
+          <Property Name="c_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="c_name" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="c_normal" Type="int" />
+          <Property Name="c_late" Type="int" />
+        </EntityType>
+        <EntityType Name="department">
+          <Key>
+            <PropertyRef Name="m_Id" />
+          </Key>
+          <Property Name="m_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="m_name" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="m_production" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="m_access" Type="int" />
+        </EntityType>
+        <EntityType Name="staff">
+          <Key>
+            <PropertyRef Name="s_Id" />
+          </Key>
+          <Property Name="s_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="s_name" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="s_gender" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="s_birthday" Type="date" Nullable="false" />
+          <Property Name="s_phone" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="s_email" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="s_post" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="s_salary" Type="int" Nullable="false" />
+          <Property Name="s_major" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="s_department" Type="nchar" MaxLength="10" />
+          <Property Name="s_username" Type="nchar" MaxLength="10" />
+          <Property Name="s_password" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="TaskStaff">
+          <Key>
+            <PropertyRef Name="t_id" />
+          </Key>
+          <Property Name="t_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="s_id" Type="int" Nullable="false" />
+          <Property Name="s_declar" Type="varchar" MaxLength="50" />
+          <Property Name="s_startTime" Type="date" Nullable="false" />
+          <Property Name="s_endTime" Type="date" Nullable="false" />
+          <Property Name="s_process" Type="int" />
+        </EntityType>
+        <EntityContainer Name="MSDSecondModelStoreContainer">
+          <EntitySet Name="Admin" EntityType="Self.Admin" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ApplySalary" EntityType="Self.ApplySalary" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CheckStaff" EntityType="Self.CheckStaff" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="department" EntityType="Self.department" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="staff" EntityType="Self.staff" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TaskStaff" EntityType="Self.TaskStaff" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MSDSecondModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Admin">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="a_User" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="a_Pass" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="department">
+          <Key>
+            <PropertyRef Name="m_Id" />
+          </Key>
+          <Property Name="m_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="m_name" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="m_production" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="m_access" Type="Int32" />
+        </EntityType>
+        <EntityType Name="staff">
+          <Key>
+            <PropertyRef Name="s_Id" />
+          </Key>
+          <Property Name="s_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="s_name" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="s_gender" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="s_birthday" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="s_phone" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="s_email" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="s_post" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="s_salary" Type="Int32" Nullable="false" />
+          <Property Name="s_major" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="s_department" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="s_username" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="s_password" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="MSDSecondEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Admin" EntityType="Self.Admin" />
+          <EntitySet Name="department" EntityType="Self.department" />
+          <EntitySet Name="staff" EntityType="Self.staff" />
+          <EntitySet Name="CheckStaff" EntityType="MSDSecondModel.CheckStaff" />
+          <EntitySet Name="TaskStaff" EntityType="MSDSecondModel.TaskStaff" />
+          <EntitySet Name="ApplySalary" EntityType="MSDSecondModel.ApplySalary" />
+        </EntityContainer>
+        <EntityType Name="CheckStaff">
+          <Key>
+            <PropertyRef Name="c_Id" />
+          </Key>
+          <Property Name="c_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="c_name" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="c_normal" Type="Int32" />
+          <Property Name="c_late" Type="Int32" />
+        </EntityType>
+        <EntityType Name="TaskStaff">
+          <Key>
+            <PropertyRef Name="t_id" />
+          </Key>
+          <Property Name="t_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="s_id" Type="Int32" Nullable="false" />
+          <Property Name="s_declar" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="s_startTime" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="s_endTime" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="s_process" Type="Int32" />
+        </EntityType>
+        <EntityType Name="ApplySalary">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="s_Id" Type="Int32" Nullable="false" />
+          <Property Name="a_salary" Type="Int32" Nullable="false" />
+          <Property Name="s_department" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="s_rewAPub" Type="Int32" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MSDSecondModelStoreContainer" CdmEntityContainer="MSDSecondEntities">
+          <EntitySetMapping Name="Admin">
+            <EntityTypeMapping TypeName="MSDSecondModel.Admin">
+              <MappingFragment StoreEntitySet="Admin">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="a_User" ColumnName="a_User" />
+                <ScalarProperty Name="a_Pass" ColumnName="a_Pass" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="department">
+            <EntityTypeMapping TypeName="MSDSecondModel.department">
+              <MappingFragment StoreEntitySet="department">
+                <ScalarProperty Name="m_Id" ColumnName="m_Id" />
+                <ScalarProperty Name="m_name" ColumnName="m_name" />
+                <ScalarProperty Name="m_production" ColumnName="m_production" />
+                <ScalarProperty Name="m_access" ColumnName="m_access" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="staff">
+            <EntityTypeMapping TypeName="MSDSecondModel.staff">
+              <MappingFragment StoreEntitySet="staff">
+                <ScalarProperty Name="s_Id" ColumnName="s_Id" />
+                <ScalarProperty Name="s_name" ColumnName="s_name" />
+                <ScalarProperty Name="s_gender" ColumnName="s_gender" />
+                <ScalarProperty Name="s_birthday" ColumnName="s_birthday" />
+                <ScalarProperty Name="s_phone" ColumnName="s_phone" />
+                <ScalarProperty Name="s_email" ColumnName="s_email" />
+                <ScalarProperty Name="s_post" ColumnName="s_post" />
+                <ScalarProperty Name="s_salary" ColumnName="s_salary" />
+                <ScalarProperty Name="s_major" ColumnName="s_major" />
+                <ScalarProperty Name="s_department" ColumnName="s_department" />
+                <ScalarProperty Name="s_username" ColumnName="s_username" />
+                <ScalarProperty Name="s_password" ColumnName="s_password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CheckStaff">
+            <EntityTypeMapping TypeName="MSDSecondModel.CheckStaff">
+              <MappingFragment StoreEntitySet="CheckStaff">
+                <ScalarProperty Name="c_late" ColumnName="c_late" />
+                <ScalarProperty Name="c_normal" ColumnName="c_normal" />
+                <ScalarProperty Name="c_name" ColumnName="c_name" />
+                <ScalarProperty Name="c_Id" ColumnName="c_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TaskStaff">
+            <EntityTypeMapping TypeName="MSDSecondModel.TaskStaff">
+              <MappingFragment StoreEntitySet="TaskStaff">
+                <ScalarProperty Name="s_process" ColumnName="s_process" />
+                <ScalarProperty Name="s_endTime" ColumnName="s_endTime" />
+                <ScalarProperty Name="s_startTime" ColumnName="s_startTime" />
+                <ScalarProperty Name="s_declar" ColumnName="s_declar" />
+                <ScalarProperty Name="s_id" ColumnName="s_id" />
+                <ScalarProperty Name="t_id" ColumnName="t_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ApplySalary">
+            <EntityTypeMapping TypeName="MSDSecondModel.ApplySalary">
+              <MappingFragment StoreEntitySet="ApplySalary">
+                <ScalarProperty Name="s_rewAPub" ColumnName="s_rewAPub" />
+                <ScalarProperty Name="s_department" ColumnName="s_department" />
+                <ScalarProperty Name="a_salary" ColumnName="a_salary" />
+                <ScalarProperty Name="s_Id" ColumnName="s_Id" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

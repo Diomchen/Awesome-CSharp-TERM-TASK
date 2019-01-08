@@ -1,0 +1,23 @@
+﻿<Page x:Class="高级人事管理系统.部门模块.部门选择模块.其他部门.其他部门功能页.StaffWatch"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:高级人事管理系统.部门模块.部门选择模块.其他部门.其他部门功能页"
+      mc:Ignorable="d" 
+      d:DesignHeight="378" d:DesignWidth="639"
+      Title="StaffWatch">
+
+    <Grid Background="#FF9F9C9C" Opacity="0.9">
+        <DataGrid Name="StaffWatchGrid" AutoGenerateColumns="False" Margin="0,0,0.2,-0.4">
+            <DataGrid.Columns >
+                <DataGridTextColumn Header="职员Id" Binding="{Binding s_Id}"/>
+                <DataGridTextColumn Header="姓名" Binding="{Binding s_name}"/>
+                <DataGridTextColumn Header="职位" Binding="{Binding s_post}"/>
+                <DataGridTextColumn Header="薪水" Binding="{Binding s_salary}"/>
+                <DataGridTextColumn Header="任务编号" Binding="{Binding t_id}"/>
+                <DataGridTextColumn Header="任务完成度" Binding="{Binding s_process}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>

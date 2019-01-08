@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ee3a7068377241c69e42a97fed4ecb66" Name="Diagram1">
+        <EntityTypeShape EntityType="MSDSecondModel.Admin" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MSDSecondModel.department" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MSDSecondModel.staff" Width="1.5" PointX="0.75" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MSDSecondModel.CheckStaff" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="MSDSecondModel.TaskStaff" Width="1.5" PointX="2.75" PointY="2.75" />
+        <EntityTypeShape EntityType="MSDSecondModel.ApplySalary" Width="1.5" PointX="4.75" PointY="2.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

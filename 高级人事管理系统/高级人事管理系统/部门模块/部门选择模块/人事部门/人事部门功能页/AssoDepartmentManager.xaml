@@ -1,0 +1,37 @@
+﻿<Page x:Class="高级人事管理系统.部门模块.部门选择模块.人事部门.人事部门功能页.AssoDepartmentManager"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:高级人事管理系统.部门模块.部门选择模块.人事部门.人事部门功能页"
+      mc:Ignorable="d" 
+      d:DesignHeight="378" d:DesignWidth="639"
+      Title="AllDepartment">
+
+    <Grid Background="#FF9F9C9C" Opacity="0.9">
+        <DataGrid Name="dataDepartment" AutoGenerateColumns="False">
+            <DataGrid.Columns >
+                <DataGridTextColumn Header="Id" Binding="{Binding m_Id}"/>
+                <DataGridTextColumn Header="部门名称" Binding="{Binding m_name}"/>
+                <DataGridTextColumn Header="部门负责人" Binding="{Binding m_production}"/>
+                <DataGridTextColumn Header="部门员工列表" Binding="{Binding m_access}"/>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button VerticalAlignment="Center" Content="保存" HorizontalAlignment="Center" Margin="0,1,0,1"
+                                      Height="30" Width="50" BorderThickness="0" Click="saveChange"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button VerticalAlignment="Center" Content="删除" HorizontalAlignment="Center" Margin="0,1,0,1"
+                                      Height="30" Width="50" Foreground="#FFF60909" BorderThickness="0" Click="deleteStaff"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>

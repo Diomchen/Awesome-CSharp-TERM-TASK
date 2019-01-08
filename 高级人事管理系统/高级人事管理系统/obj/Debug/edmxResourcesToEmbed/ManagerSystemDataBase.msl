@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ManagerSystemDataBaseModel1StoreContainer" CdmEntityContainer="ManagerSystemDataBaseEntities1">
+    <EntitySetMapping Name="Admin">
+      <EntityTypeMapping TypeName="ManagerSystemDataBaseModel1.Admin">
+        <MappingFragment StoreEntitySet="Admin">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="a_User" ColumnName="a_User" />
+          <ScalarProperty Name="a_Pass" ColumnName="a_Pass" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="department">
+      <EntityTypeMapping TypeName="ManagerSystemDataBaseModel1.department">
+        <MappingFragment StoreEntitySet="department">
+          <ScalarProperty Name="m_Id" ColumnName="m_Id" />
+          <ScalarProperty Name="m_name" ColumnName="m_name" />
+          <ScalarProperty Name="m_production" ColumnName="m_production" />
+          <ScalarProperty Name="m_access" ColumnName="m_access" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Manager">
+      <EntityTypeMapping TypeName="ManagerSystemDataBaseModel1.Manager">
+        <MappingFragment StoreEntitySet="Manager">
+          <ScalarProperty Name="d_id" ColumnName="d_id" />
+          <ScalarProperty Name="d_username" ColumnName="d_username" />
+          <ScalarProperty Name="d_password" ColumnName="d_password" />
+          <ScalarProperty Name="d_gendar" ColumnName="d_gendar" />
+          <ScalarProperty Name="d_department" ColumnName="d_department" />
+          <ScalarProperty Name="d_email" ColumnName="d_email" />
+          <ScalarProperty Name="d_phone" ColumnName="d_phone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="staff">
+      <EntityTypeMapping TypeName="ManagerSystemDataBaseModel1.staff">
+        <MappingFragment StoreEntitySet="staff">
+          <ScalarProperty Name="s_password" ColumnName="s_password" />
+          <ScalarProperty Name="s_username" ColumnName="s_username" />
+          <ScalarProperty Name="s_department" ColumnName="s_department" />
+          <ScalarProperty Name="s_major" ColumnName="s_major" />
+          <ScalarProperty Name="s_salary" ColumnName="s_salary" />
+          <ScalarProperty Name="s_post" ColumnName="s_post" />
+          <ScalarProperty Name="s_email" ColumnName="s_email" />
+          <ScalarProperty Name="s_phone" ColumnName="s_phone" />
+          <ScalarProperty Name="s_birthday" ColumnName="s_birthday" />
+          <ScalarProperty Name="s_gender" ColumnName="s_gender" />
+          <ScalarProperty Name="s_name" ColumnName="s_name" />
+          <ScalarProperty Name="s_Id" ColumnName="s_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
